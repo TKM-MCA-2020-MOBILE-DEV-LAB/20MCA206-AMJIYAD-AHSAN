@@ -1,4 +1,4 @@
-package com.example.gridcalculator;
+package com.example.gridcalc;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
@@ -8,8 +8,8 @@ public class MainActivity extends AppCompatActivity {
     Button button0, button1, button2, button3, button4, button5,
             button6,
             button7, button8, button9, buttonAdd, buttonSub,
-            buttonDivision,
-            buttonMul, buttond, buttonC, buttonEqual,buttonperc;
+            buttonDiv,
+            buttonMul, buttond, buttonC, buttonEqu,buttonperc;
     EditText cEditText;
     float mValueOne, mValueTwo;
     boolean cAddition, mSubtract, cMultiplication, cDivision,cperc;
@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity {
         button8 = (Button) findViewById(R.id.button10);
         button9 = (Button) findViewById(R.id.button11);
         buttond = (Button) findViewById(R.id.button19);
-        buttonAdd = (Button) findViewById(R.id.button20);
-        buttonSub = (Button) findViewById(R.id.button17);
-        buttonMul = (Button) findViewById(R.id.button12);
-        buttonDivision = (Button) findViewById(R.id.button5);
+        buttonAdd = (Button) findViewById(R.id.Add);
+        buttonSub = (Button) findViewById(R.id.Sub);
+        buttonMul = (Button) findViewById(R.id.Mul);
+        buttonDiv = (Button) findViewById(R.id.Div);
         buttonC = (Button) findViewById(R.id.button2);
         buttonperc = (Button) findViewById(R.id.button4);
-        buttonEqual = (Button) findViewById(R.id.button21);
+        buttonEqu = (Button) findViewById(R.id.Equ);
         cEditText = (EditText) findViewById(R.id.edt1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                 cEditText.setText(null);
             }
         });
-        buttonDivision.setOnClickListener(new View.OnClickListener() {
+        buttonDiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mValueOne = Float.parseFloat(cEditText.getText() +
@@ -145,25 +145,25 @@ public class MainActivity extends AppCompatActivity {
                 cEditText.setText(null);
             }
         });
-        buttonEqual.setOnClickListener(new View.OnClickListener() {
+        buttonEqu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mValueTwo = Float.parseFloat(cEditText.getText() +
                         "");
                 if (cAddition == true) {
-                    cEditText.setText(mValueOne + mValueTwo + "");
+                    cEditText.setText(Float.toString(mValueOne)+" + "+Float.toString(mValueTwo)+" = "+Float.toString(mValueOne + mValueTwo) + "");
                     cAddition = false;
                 }
                 if (mSubtract == true) {
-                    cEditText.setText(mValueOne - mValueTwo + "");
+                    cEditText.setText(Float.toString(mValueOne)+" - "+Float.toString(mValueTwo)+" = "+Float.toString(mValueOne - mValueTwo) + "");
                     mSubtract = false;
                 }
                 if (cMultiplication == true) {
-                    cEditText.setText(mValueOne * mValueTwo + "");
+                    cEditText.setText(Float.toString(mValueOne)+" * "+Float.toString(mValueTwo)+" = "+Float.toString(mValueOne * mValueTwo) + "");
                     cMultiplication = false;
                 }
                 if (cDivision == true) {
-                    cEditText.setText(mValueOne / mValueTwo + "");
+                    cEditText.setText(Float.toString(mValueOne)+" / "+Float.toString(mValueTwo)+" = "+Float.toString(mValueOne / mValueTwo) + "");
                     cDivision = false;
                 }
                 if (cperc == true) {

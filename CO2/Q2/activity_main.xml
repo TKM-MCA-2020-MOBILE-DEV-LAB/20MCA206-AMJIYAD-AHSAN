@@ -22,35 +22,30 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:text="C"
-            android:textSize="20sp"
-            app:layout_column="0"
-            app:layout_row="0" />
+            android:textSize="20sp" />
         <Button
             android:id="@+id/button3"
             android:layout_width="98dp"
             android:layout_height="60dp"
             android:text="( )"
             android:textSize="20sp"
-            app:layout_column="1"
-            app:layout_row="0" />
+            />
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:text="%"
             android:textSize="20sp"
-            app:layout_column="2"
-            app:layout_row="0" />
+            />
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/Div"
             android:layout_width="121dp"
             android:layout_height="64dp"
             android:layout_row="0"
             android:layout_column="3"
             android:text="/"
             android:textSize="20sp"
-            app:layout_column="3"
-            app:layout_row="0" />
+            />
         <Button
             android:id="@+id/button6"
             android:layout_width="91dp"
@@ -59,8 +54,7 @@
             android:layout_column="0"
             android:text="7"
             android:textSize="20sp"
-            app:layout_column="0"
-            app:layout_row="1" />
+            />
         <Button
             android:id="@+id/button7"
             android:layout_width="wrap_content"
@@ -69,8 +63,7 @@
             android:layout_column="1"
             android:text="4"
             android:textSize="20sp"
-            app:layout_column="0"
-            app:layout_row="2" />
+            />
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
@@ -79,16 +72,14 @@
             android:layout_column="2"
             android:text="1"
             android:textSize="20sp"
-            app:layout_column="0"
-            app:layout_row="3" />
+            />
         <Button
             android:id="@+id/button9"
             android:layout_width="123dp"
             android:layout_height="65dp"
             android:text="+/-"
             android:textSize="20sp"
-            app:layout_column="0"
-            app:layout_row="4" />
+            />
         <Button
             android:id="@+id/button10"
             android:layout_width="wrap_content"
@@ -97,8 +88,7 @@
             android:layout_column="0"
             android:text="8"
             android:textSize="20sp"
-            app:layout_column="1"
-            app:layout_row="1" />
+            />
         <Button
             android:id="@+id/button11"
             android:layout_width="wrap_content"
@@ -107,18 +97,16 @@
             android:layout_column="1"
             android:text="9"
             android:textSize="20sp"
-            app:layout_column="2"
-            app:layout_row="1" />
+            />
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/Mul"
             android:layout_width="113dp"
             android:layout_height="62dp"
             android:layout_row="2"
             android:layout_column="3"
             android:text="*"
             android:textSize="20sp"
-            app:layout_column="3"
-            app:layout_row="1" />
+            />
         <Button
             android:id="@+id/button13"
             android:layout_width="wrap_content"
@@ -127,8 +115,7 @@
             android:layout_column="1"
             android:text="5"
             android:textSize="20sp"
-            app:layout_column="1"
-            app:layout_row="2" />
+            />
         <Button
             android:id="@+id/button14"
             android:layout_width="wrap_content"
@@ -137,8 +124,7 @@
             android:layout_column="2"
             android:text="2"
             android:textSize="20sp"
-            app:layout_column="1"
-            app:layout_row="3" />
+            />
         <Button
             android:id="@+id/button15"
             android:layout_width="wrap_content"
@@ -147,8 +133,7 @@
             android:layout_column="2"
             android:text="0"
             android:textSize="20sp"
-            app:layout_column="1"
-            app:layout_row="4" />
+            />
         <Button
             android:id="@+id/button16"
             android:layout_width="wrap_content"
@@ -157,26 +142,23 @@
             android:layout_column="0"
             android:text="6"
             android:textSize="20sp"
-            app:layout_column="2"
-            app:layout_row="2" />
+            />
         <Button
-            android:id="@+id/button17"
+            android:id="@+id/Sub"
             android:layout_width="wrap_content"
             android:layout_height="61dp"
             android:layout_row="3"
             android:layout_column="0"
             android:text="-"
             android:textSize="20sp"
-            app:layout_column="3"
-            app:layout_row="2" />
+            />
         <Button
             android:id="@+id/button18"
             android:layout_width="wrap_content"
             android:layout_height="59dp"
             android:text="3"
             android:textSize="20sp"
-            app:layout_column="2"
-            app:layout_row="3" />
+            />
         <Button
             android:id="@+id/button19"
             android:layout_width="wrap_content"
@@ -185,28 +167,25 @@
             android:layout_column="2"
             android:text="."
             android:textSize="24sp"
-            app:layout_column="2"
-            app:layout_row="4" />
+            />
         <Button
-            android:id="@+id/button20"
+            android:id="@+id/Add"
             android:layout_width="121dp"
             android:layout_height="59dp"
             android:layout_row="3"
             android:layout_column="3"
             android:text="+"
             android:textSize="20sp"
-            app:layout_column="3"
-            app:layout_row="3" />
+            />
         <Button
-            android:id="@+id/button21"
+            android:id="@+id/Equ"
             android:layout_width="111dp"
             android:layout_height="62dp"
             android:layout_row="4"
             android:layout_column="3"
             android:text="="
             android:textSize="20sp"
-            app:layout_column="3"
-            app:layout_row="4" />
+            />
     </android.widget.GridLayout>
     <EditText
         android:id="@+id/edt1"
