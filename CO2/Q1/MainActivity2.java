@@ -1,26 +1,38 @@
-package com.example.sharedpreferences;
+package com.example.sharedpreference;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
 public class MainActivity2 extends AppCompatActivity {
-    TextView t1,t2,t3;
+    TextView t1;
+    TextView t2;
+    TextView t3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        t1=(TextView)findViewById(R.id.t1);
-        t2=(TextView)findViewById(R.id.t2);
-        t3=(TextView)findViewById(R.id.t3);
-        Bundle extras=getIntent().getExtras();
-        String val= extras.getString("val");
-        String val2= extras.getString("val2");
-        String val3= extras.getString("val3");
-        t1.setText(val);
-        t2.setText(val2);
-        t3.setText(val3);
+        t1 = (TextView) findViewById(R.id.t1);
+        t2 = (TextView) findViewById(R.id.t2);
+        t3 = (TextView) findViewById(R.id.t3);
+        // create the get Intent object
+        Intent intent = getIntent();
+
+        // receive the value by getStringExtra() method
+        // and key must be same which is send by first activity
+        String str = intent.getStringExtra("Value1");
+        String str1 = intent.getStringExtra("Value2");
+        String str2 = intent.getStringExtra("Value3");
+
+        // display the string into textView
+        t1.setText(str);
+        t2.setText(str1);
+        t3.setText(str2);
+
     }
 }
